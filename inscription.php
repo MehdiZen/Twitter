@@ -39,10 +39,10 @@ if (isset($_POST['valider'])) {
 						if (strlen($_POST['email']) < 7 or strlen($_POST['email']) > 50) {
 							echo "Le mail doit être d'une longueur minimum de 7 caractères et de 50 maximum.";
 						} else {
-							$host = 'www.webacademie-project.tech';
-							$dbname = 'twitter_academy_db';
-							$username = 'wac209_user';
-							$password = 'wac209';
+							$host = 'localhost';
+$dbname = 'tweetacademy';
+$username = 'mzenati';
+$password = 'root';
 							try {
 								$conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 								$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

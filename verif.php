@@ -1,9 +1,9 @@
 <?php
 session_start();
-$host = 'www.webacademie-project.tech';
-							$dbname = 'twitter_academy_db';
-							$username = 'wac209_user';
-							$password = 'wac209';
+$host = 'localhost';
+$dbname = 'tweetacademy';
+$username = 'mzenati';
+$password = 'root';
 							try {
 								$bdd = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 								$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -28,4 +28,3 @@ if(isset($_GET['id']) AND !empty($_GET['id']) AND isset($_GET['cle']) AND !empty
 else{
     echo "Aucun utilisateur trouvé";
 }
-?>

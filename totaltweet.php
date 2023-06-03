@@ -1,8 +1,8 @@
 <?php
-$host = 'www.webacademie-project.tech';
-$dbname = 'twitter_academy_db';
-$username = 'wac209_user';
-$password = 'wac209';
+$host = 'localhost';
+$dbname = 'tweetacademy';
+$username = 'mzenati';
+$password = 'root';
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);

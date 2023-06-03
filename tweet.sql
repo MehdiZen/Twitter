@@ -655,8 +655,8 @@ ALTER TABLE `tweet`
 --
 -- Constraints for table `tweet`
 --
-ALTER TABLE `tweet`
-  ADD CONSTRAINT `fk0` FOREIGN KEY (`id_user`) REFERENCES `users` (`id`);
+-- ALTER TABLE `tweet`
+--   ADD CONSTRAINT `fk0` FOREIGN KEY (`id_user`) REFERENCES `users` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

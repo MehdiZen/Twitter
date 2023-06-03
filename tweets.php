@@ -25,10 +25,10 @@ function date_en_lettres($date)
     return "$jour $mois $annee";
 }
 // --------------------------------------------------------------------
-$host = 'www.webacademie-project.tech';
-$dbname = 'twitter_academy_db';
-$username = 'wac209_user';
-$password = 'wac209';
+$host = 'localhost';
+$dbname = 'tweetacademy';
+$username = 'mzenati';
+$password = 'root';
 session_start();
 if (isset($_SESSION['id'])) {
     $utilisateur = $_SESSION['id'];
